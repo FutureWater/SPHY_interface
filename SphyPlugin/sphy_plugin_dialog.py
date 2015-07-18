@@ -201,6 +201,11 @@ class SphyPluginDialog(QtGui.QDialog, Ui_sphyDialog):
         self.setupUi(self)
         self.setWindowIcon(QtGui.QIcon(os.path.join(os.path.dirname(__file__),"icon.png")))
         
+        #- self.exitDate is used to check whether it needs to update the configfile after dates has been changed. This value is always True
+        #- except when a new project is created or a project is openened, because then it already reads the date from the config, so updating the 
+        #- config is then not required
+        self.exitDate = False
+        
         """
         If QGIS is loaded, check if there is a recent SPHY config file in the registry
         if not, then create a reference to the SPHY config template and initialize the plugin

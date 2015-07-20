@@ -528,7 +528,15 @@ class SphyPluginDialog(QtGui.QDialog, Ui_sphyDialog):
             QtGui.QMessageBox.information(self.iface.mainWindow(), "Time Series Viewer", u"No point in the active layer has been selected")
             self.showTimeSeries()
             return
-        fid = fid + 1 # somehow fid starts with zero.
+        #fid = fid + 1 # somehow fid starts with zero.
+        # get the correct station id from the features
+        features = layer.getFeatures()
+        for feat in features:
+            if feat.id()==fid:
+                stationId = feat[0]
+                fid = int(stationId)
+                break
+        
         self.iface.mainWindow().statusBar().clearMessage()
         
         # get the item that returns the correct ylabel from the ylabelDictionary

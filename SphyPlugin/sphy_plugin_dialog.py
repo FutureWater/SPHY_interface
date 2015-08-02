@@ -839,27 +839,27 @@ class SphyPluginDialog(QtGui.QDialog, Ui_sphyDialog):
             for row in r:
                 if row[0]=="timestep":
                     break
-            oldcount = 0
-            
-            # loop over lines until it finds the first record number with data
+            # loop over lines until it finds the first record number with data and determine the number of stations
+            stations = -1            
             for row in r:
-                line = []
-                for i in row:
-                    if i is not"":
-                        line.append(i)
-                count = int(line[0])
-                if count<oldcount:
-                    stations = oldcount
+                stations+=1            
+                if len(row)>1:
                     break
-                else:
-                    oldcount = count
+            #-read the first data record
+            line = []
+            for i in row:
+                if i is not"":
+                    line.append(i)
             # write the first record to a temporary file
             f = open(self.outputPath + "tempdata", "w")
             f.write("%s," %(date.strftime("%Y-%m-%d")))
             for s in range(1, stations):
                 f.write("%f," %float(line[s]))
-            f.write("%f\n" %float(line[s+1]))
-            # write the remaining records
+            if stations == 1:
+                f.write("%f\n" %float(line[1]))
+            else:
+                f.write("%f\n" %float(line[s+1]))        
+            # write the remaining records    
             for row in r:
                 date = date + datetime.timedelta(days=1)
                 f.write("%s," %(date.strftime("%Y-%m-%d")))
@@ -869,8 +869,11 @@ class SphyPluginDialog(QtGui.QDialog, Ui_sphyDialog):
                         line.append(i)
                 for s in range(1, stations):
                     f.write("%f," %float(line[s]))
-                f.write("%f\n" %float(line[s+1]))
-            f.close()
+                if stations == 1:
+                    f.write("%f\n" %float(line[1]))
+                else:
+                    f.write("%f\n" %float(line[s+1]))        
+            f.close()    
         outFileName = fileName.split(".tss")[0] + ".csv"
         shutil.move(self.outputPath + "tempdata", self.outputPath + outFileName)
         os.remove(self.outputPath + fileName)

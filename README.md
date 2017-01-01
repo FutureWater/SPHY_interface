@@ -8,7 +8,7 @@ More information about the SPHY model can be found on the <a href="http://www.sp
 <b>Minimum system requirements</b>
 <ul>
 <li>Windows 7 or later version</li>
-<li>QGIS 2.4 or later version (32 bits is mandatory</li>
+<li>QGIS 2.4 or later version (32 bits is mandatory)</li>
 </ul>
 
 <b>Documentation</b>

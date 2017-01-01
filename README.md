@@ -1,14 +1,14 @@
 # SPHY model interface plugin for QGIS
 <i>Version 1.0</i>
 
-This interface is developed as plugin for QGIS, and is currently only compatible with <a href="https://github.com/FutureWater/SPHY.git" target="_blank">SPHY version 2.0</a>. This first version of the interface has been developed to be used in snow- and glacier-fed river basins. Therefore, the use of this interface is less suitable for other applications. Ongoing development will make the interface suitable to be used with more recent versions of SPHY and a broader range of hydrological applications.   
+This interface is developed as plugin for QGIS, and is currently only compatible with SPHY version 2.0. This first version of the interface has been developed to be used in snow- and glacier-fed river basins. Therefore, the use of this interface is less suitable for other applications. Ongoing development will make the interface suitable to be used with more recent versions of SPHY and a broader range of hydrological applications.   
 
 More information about the SPHY model can be found on the <a href="http://www.sphy-model.org" target="_blank">SPHY model website</a>.
 
 <b>Minimum system requirements</b>
 <ul>
 <li>Windows 7 or later version</li>
-<li>QGIS 2.4 or later version</li>
+<li>QGIS 2.4 or later version (32 bits is mandatory</li>
 </ul>
 
 <b>Documentation</b>

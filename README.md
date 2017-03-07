@@ -11,6 +11,9 @@ More information about the SPHY model can be found on the <a href="http://www.sp
 <li>QGIS 2.4 or later version (32 bits is mandatory)</li>
 </ul>
 
+<b>SPHY model user group</b></br>
+A user group for the SPHY model is available in <a href="https://groups.google.com/forum/#!forum/sphy-model-user" target="_blank">Google Groups</a>. You can use this group to post Questions and Answers related to the source code, available plugins, input and output formats, calibration, applications, and suggestions for improvements.
+
 <b>Documentation</b>
 <ul>
 

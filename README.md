@@ -37,6 +37,7 @@ The development and publication of the SPHY model source code, its binaries, GUI
 <li>Rijksdienst voor Ondernemend Nedeland (RVO)</li>
 <li>NUFFIC</li>
 </ul>
+
 We are very grateful to these organizations that made the development of the SPHY model possible. 
 We hope to continue to collaborate with these organizations in the future in order to further develop and improve the SPHY model and its interfaces.
 

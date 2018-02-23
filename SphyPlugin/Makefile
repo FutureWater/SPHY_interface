@@ -2,7 +2,7 @@
 # A QGIS plugin that allows the user to setup the SPHY model, run the model
 # and visualize results.
 #
-# Copyright (C) 2014  Wilco Terink
+# Copyright (C) 2014  FutureWater
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Email: w.terink@futurewater.nl OR terinkw@gmail.com
+# Email: info@futurewater.nl
 
 #/***************************************************************************
 # SphyPlugin
@@ -26,8 +26,8 @@
 #							 -------------------
 #		begin				: 2014-09-09
 #		git sha				: $Format:%H$
-#		copyright			: (C) 2014 by Wilco Terink
-#		email				: w.terink@futurewater.nl
+#		copyright			: (C) 2014 by FutureWater
+#		email				: info@futurewater.nl
 # ***************************************************************************/
 #
 

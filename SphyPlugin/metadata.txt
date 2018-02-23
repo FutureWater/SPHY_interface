@@ -11,8 +11,8 @@ name=SPHY model
 qgisMinimumVersion=2.0
 description=Interface for the SPHY model. Compatible with SPHY v2.0.
 version=1.0
-author=W. Terink, FutureWater
-email=w.terink@futurewater.nl
+authors=W. Terink, A. Lutz, G. Simons, W. Immerzeel and P. Droogers
+email=info@futurewater.nl
 
 # End of mandatory metadata
 

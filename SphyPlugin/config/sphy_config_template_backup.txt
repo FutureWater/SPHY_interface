@@ -3,7 +3,7 @@
 # CAN BE USED TO CHANGE MODEL INPUT, SET PARAMETERS, MODEL OUTPUT, AND TURN ON/OFF MODULES
 #
 # THE SPATIAL PROCESSES IN HYDROLOGY (SPHY) MODEL IS DEVELOPED AND OWNED BY FUTUREWATER.
-# AUTHOR: W. Terink
+# AUTHORS: W. Terink, A. Lutz, G. Simons, W. Immerzeel and P. Droogers
 # DATE LATEST CHANGE: 15-04-2014
 # VERSION 2.0
 #***********************************************************************************************
